@@ -1,0 +1,24 @@
+{
+  "name": "sekrenton-platform-saas",
+  "version": "1.0.0",
+  "description": "Multi-tenant SaaS platform empowering schools to provision customized portal networks and landing page ecosystems.",
+  "main": "pages/index.html",
+  "scripts": {
+    "dev:css": "tailwindcss -i ./src/styles.css -o ./dist/output.css --watch",
+    "build:css": "tailwindcss -i ./src/styles.css -o ./dist/output.css --minify",
+    "start": "npx browser-sync start --server --files 'pages/**/*.html, components/**/*.html, dist/**/*.css, *.html' --index 'pages/index.html'"
+  },
+  "keywords": [
+    "multi-tenant",
+    "saas",
+    "edutech",
+    "school-portal",
+    "tailwind-css"
+  ],
+  "author": "Sekrenton Core Infrastructure Architecture",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^3.0.0",
+    "tailwindcss": "^3.4.0"
+  }
+}

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscription Tiers — Sekrenton Multi-Tenant Engine</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sekrenton: {
+                            deepNavy: '#171638',
+                            bgDark: '#111033',
+                            violetAccent: '#4F46E5',
+                        }
+                    },
+                    borderRadius: {
+                        'card': '12px',
+                        'btn': '6px',
+                    }
+                }
+            }
+        }
+    </script>
+  </head>
+  <body class="flex flex-col h-full bg-[#F8FAFC] font-sans antialiased text-[#111827]">
+    
+    <header class="bg-[#F4F7FA] border-b border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <img src="../assets/Sekrenton Logo.png" alt="Sekrenton Logo" class="h-8 w-auto object-contain mix-blend-multiply">
+                <span class="text-xl font-bold tracking-tight text-sekrenton-deepNavy transition-colors group-hover:text-indigo-600">Sekrenton</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Home</a>
+                <a href="pricing.html" class="text-sm font-semibold text-indigo-600 transition-colors underline underline-offset-8">Pricing</a>
+                <a href="features.html" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Features</a>
+                <a href="contact.html" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Contact</a>
+            </nav>
+            <div class="flex items-center">
+                <a href="contact.html" class="bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-md hover:bg-indigo-500 transition-all shadow-md shadow-indigo-100">
+                    Request Demo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+      <section class="max-w-7xl mx-auto px-6 py-16">
+        
+        <div class="text-center max-w-2xl mx-auto space-y-4 mb-6">
+          <span class="text-xs font-bold uppercase tracking-widest text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full">Special Launch Offer</span>
+          <h2 class="text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
+            Simple, Transparent Tiering
+          </h2>
+          <p class="text-base text-[#6B7280]">
+            Select the scope that fits your educational network infrastructure requirements perfectly. All tiers feature a <strong>3-Month Risk-Free Trial</strong>.
+          </p>
+
+          <div class="inline-flex items-center bg-neutral-200/60 p-1 rounded-btn mt-4">
+            <button
+              id="toggle-monthly"
+              onclick="setBillingCycle('monthly')"
+              class="text-xs font-semibold px-4 py-1.5 rounded-btn bg-white shadow-sm text-neutral-900 transition-all"
+            >
+              Monthly
+            </button>
+            <button
+              id="toggle-annual"
+              onclick="setBillingCycle('annual')"
+              class="text-xs font-semibold px-4 py-1.5 rounded-btn text-slate-600 hover:text-neutral-900 transition-all"
+            >
+              Annual (Save 20%)
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 max-w-4xl mx-auto mb-16 text-center text-sm text-amber-900 font-medium">
+            🎁 <strong>Risk-Free Trial Extension:</strong> Enjoy full platform implementation across your chosen plan for 3 entire months absolutely free. Zero billing begins until your 90-day onboarding concludes.
+        </div>
+
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-6 items-stretch max-w-7xl mx-auto">
+          
+          <div class="bg-white p-6 rounded-card border border-slate-200 shadow-sm flex flex-col justify-between space-y-6">
+            <div class="space-y-4">
+              <div>
+                <h4 class="text-base font-bold text-slate-900">Primary Crest Starter</h4>
+                <p class="text-xs text-slate-400 mt-1">Ideal for growing standalone private primary schools.</p>
+              </div>
+              <div class="pt-2 flex items-baseline text-neutral-900">
+                <span class="text-2xl font-bold text-slate-900">₦</span>
+                <span class="text-3xl font-bold tracking-tight price-val" data-monthly="25,000" data-annual="20,000">25,000</span>
+                <span class="text-xs text-slate-500 font-medium ml-1">/ month</span>
+              </div>
+              <div class="bg-emerald-50 text-emerald-700 text-[10px] font-bold px-2 py-1 rounded inline-block">3 Months Free Trial</div>
+              <hr class="border-slate-100" />
+              <ul class="text-xs text-slate-600 space-y-3">
+                <li class="flex items-start space-x-2 font-semibold text-indigo-600">
+                    <span class="text-indigo-600">🎨</span>
+                    <span><strong>5 Premium Layout Themes</strong></span>
+                </li>
+                <li class="flex items-start space-x-2 text-indigo-600 font-medium">
+                    <span>🌐</span>
+                    <span><strong>Custom Domain Integration</strong></span>
+                </li>
+                <li class="flex items-start space-x-2 text-slate-900 font-medium">
+                    <span class="text-emerald-500">✓</span>
+                    <span>Full Website + Portal Access</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                    <span class="text-emerald-500">✓</span>
+                    <span>Up to <strong>150 Enrolled Students</strong></span>
+                </li>
+                <li class="flex items-start space-x-2">
+                    <span class="text-emerald-500">✓</span>
+                    <span><strong>15 GB</strong> Protected Cloud Storage</span>
+                </li>
+              </ul>
+            </div>
+            <button onclick="location.href='contact.html'" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-2.5 text-xs rounded-btn transition-all">
+              Claim 3 Months Free
+            </button>
+          </div>
+
+          <div class="bg-[#191740] text-white p-6 rounded-card shadow-xl flex flex-col justify-between space-y-6 relative border-2 border-indigo-500 transform lg:-translate-y-2">
+            <span class="absolute top-0 right-6 transform -translate-y-1/2 bg-indigo-500 text-white text-[9px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-full">Best Seller</span>
+            <div class="space-y-4">
+              <div>
+                <h4 class="text-base font-bold text-white">Academy Premier Hub</h4>
+                <p class="text-xs text-slate-300 mt-1">Tailored for standard day & boarding secondary schools.</p>
+              </div>
+              <div class="pt-2 flex items-baseline text-white">
+                <span class="text-2xl font-bold text-white">₦</span>
+                <span class="text-3xl font-bold tracking-tight price-val" data-monthly="50,000" data-annual="40,000">50,000</span>
+                <span class="text-xs text-indigo-200 font-medium ml-1">/ month</span>
+              </div>
+              <div class="bg-indigo-500/30 text-indigo-200 text-[10px] font-bold px-2 py-1 rounded inline-block border border-indigo-500/20">3 Months Free Trial</div>
+              <hr class="border-white/10" />
+              <ul class="text-xs text-slate-200 space-y-3">
+                <li class="flex items-start space-x-2 font-semibold text-indigo-300">
+                    <span>🎨</span>
+                    <span><strong>10 Premium Layout Themes</strong></span>
+                </li>
+                <li class="flex items-start space-x-2 text-indigo-300 font-medium">
+                    <span>🌐</span>
+                    <span><strong>Custom Domain Integration</strong></span>
+                </li>
+                <li class="flex items-start space-x-2 text-white font-medium">
+                    <span class="text-indigo-400">✓</span>
+                    <span>Full Website + Portal Access</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                    <span class="text-indigo-400">✓</span>
+                    <span>Up to <strong>500 Enrolled Students</strong></span>
+                </li>
+                <li class="flex items-start space-x-2">
+                    <span class="text-indigo-400">✓</span>
+                    <span><strong>50 GB</strong> Protected Cloud Storage</span>
+                </li>
+              </ul>
+            </div>
+            <button onclick="location.href='contact.html'" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2.5 text-xs rounded-btn transition-all shadow-md shadow-indigo-950">
+              Claim 3 Months Free
+            </button>
+          </div>
+
+          <div class="bg-white p-6 rounded-card border border-slate-200 shadow-sm flex flex-col justify-between space-y-6">
+            <div class="space-y-4">
+              <div>
+                <h4 class="text-base font-bold text-slate-900">Institutional Prestige Max</h4>
+                <p class="text-xs text-slate-400 mt-1">Built for large-scale, elite multi-campus school systems.</p>
+              </div>
+              <div class="pt-2 flex items-baseline text-neutral-900">
+                <span class="text-2xl font-bold text-slate-900">₦</span>
+                <span class="text-3xl font-bold tracking-tight price-val" data-monthly="75,000" data-annual="60,000">75,000</span>
+                <span class="text-xs text-slate-500 font-medium ml-1">/ month</span>
+              </div>
+              <div class="bg-emerald-50 text-emerald-700 text-[10px] font-bold px-2 py-1 rounded inline-block">3 Months Free Trial</div>
+              <hr class="border-slate-100" />
+              <ul class="text-xs text-slate-600 space-y-3">
+                <li class="flex items-start space-x-2 font-semibold text-indigo-600">
+                    <span class="text-indigo-600">🎨</span>
+                    <span><strong>15 Premium Layout Themes</strong></span>
+                </li>
+                <li class="flex items-start space-x-2 text-indigo-600 font-medium">
+                    <span class="text-indigo-600">🌐</span>
+                    <span><strong>Custom Domain Integration</strong></span>
+                </li>
+                <li class="flex items-start space-x-2 text-slate-900 font-medium">
+                    <span class="text-emerald-500">✓</span>
+                    <span>Full Website + Portal Access</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                    <span class="text-emerald-500">✓</span>
+                    <span>Up to <strong>1,200 Enrolled Students</strong></span>
+                </li>
+                <li class="flex items-start space-x-2">
+                    <span class="text-emerald-500">✓</span>
+                    <span><strong>120 GB</strong> Dedicated Data Allocation</span>
+                </li>
+              </ul>
+            </div>
+            <button onclick="location.href='contact.html'" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-2.5 text-xs rounded-btn transition-all">
+              Claim 3 Months Free
+            </button>
+          </div>
+
+          <div class="bg-white p-6 rounded-card border border-slate-200 shadow-sm flex flex-col justify-between space-y-6">
+            <div class="space-y-4">
+              <div>
+                <h4 class="text-base font-bold text-slate-900">Enterprise Elite Network</h4>
+                <p class="text-xs text-slate-400 mt-1">For massive educational groups and large universities.</p>
+              </div>
+              <div class="pt-2 flex items-baseline text-neutral-900">
+                <span class="text-2xl font-bold text-slate-900">Custom</span>
+              </div>
+              <div class="bg-indigo-50 text-indigo-700 text-[10px] font-bold px-2 py-1 rounded inline-block">Tailored Trial Structures</div>
+              <hr class="border-slate-100" />
+              <ul class="text-xs text-slate-600 space-y-3">
+                <li class="flex items-start space-x-2 font-semibold text-indigo-600">
+                    <span class="text-indigo-600">🎨</span>
+                    <span><strong>20 Custom Brand Themes</strong></span>
+                </li>
+                <li class="flex items-start space-x-2 text-indigo-600 font-medium">
+                    <span class="text-indigo-600">🌐</span>
+                    <span><strong>Custom Domain + Multi-DNS Nodes</strong></span>
+                </li>
+                <li class="flex items-start space-x-2 text-slate-900 font-medium">
+                    <span class="text-indigo-400">✓</span>
+                    <span>Full Website + Portal Access</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                    <span class="text-indigo-600">✓</span>
+                    <span><strong>Unlimited Enrolled Students</strong></span>
+                </li>
+                <li class="flex items-start space-x-2">
+                    <span class="text-indigo-600">✓</span>
+                    <span><strong>Custom Uncapped</strong> Cloud Storage</span>
+                </li>
+              </ul>
+            </div>
+            <button onclick="location.href='contact.html'" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2.5 text-xs rounded-btn transition-all">
+              Contact Operations
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="bg-slate-100/60 border-t border-b border-slate-200/60 py-20">
+          <div class="max-w-6xl mx-auto px-6">
+              <div class="text-center max-w-2xl mx-auto space-y-2 mb-14">
+                  <h2 class="text-3xl font-bold tracking-tight text-slate-900">Trusted by Forward-Thinking Schools</h2>
+                  <p class="text-sm text-slate-500">Read how administrators and principals leverage Sekrenton to optimize their digital presence.</p>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-8">
+                  <div class="bg-white p-8 rounded-card border border-slate-200/60 shadow-sm flex flex-col justify-between space-y-6">
+                      <p class="text-slate-600 italic text-sm leading-relaxed">
+                          "Migrating our portal ecosystem to Sekrenton completely streamlined our administrative reporting workflows. The custom domain mapping works flawlessly, and the built-in layout themes instantly upgraded our public facing image."
+                      </p>
+                      <div class="flex items-center space-x-3 pt-2">
+                          <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center text-white font-bold text-xs shadow-inner">
+                              TA
+                          </div>
+                          <div>
+                              <h5 class="text-xs font-bold text-slate-900">Tunde Akogun</h5>
+                              <p class="text-[10px] text-slate-400 font-medium">Director of Strategic Infrastructure</p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="bg-white p-8 rounded-card border border-slate-200/60 shadow-sm flex flex-col justify-between space-y-6">
+                      <p class="text-slate-600 italic text-sm leading-relaxed">
+                          "The platform speed provided by the underlying global mesh infrastructure is incredible. Parents receive fast terminal grade calculations instantly with absolute database accuracy, and onboarding students took less than an hour."
+                      </p>
+                      <div class="flex items-center space-x-3 pt-2">
+                          <div class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-white font-bold text-xs shadow-inner">
+                              GB
+                          </div>
+                          <div>
+                              <h5 class="text-xs font-bold text-slate-900">Godwin Bobola</h5>
+                              <p class="text-[10px] text-slate-400 font-medium">Head of Institutional Technology</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+    </main>
+
+    <footer class="bg-sekrenton-bgDark text-slate-400 border-t border-white/5 pt-16 pb-8 font-sans">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-12 gap-8 pb-12 border-b border-white/10">
+            
+            <div class="col-span-2 md:col-span-4 space-y-4">
+                <div class="flex items-center space-x-2">
+                    <span class="text-lg font-bold tracking-tight text-white">Sekrenton Platforms</span>
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+                    Providing top-tier multi-tenant SaaS digital infrastructure, specialized school website architecture, and dynamic portals optimized for the educational industry.
+                </p>
+                <div class="text-[11px] space-y-1 text-slate-500">
+                    <p class="font-semibold text-slate-400">Headquarters Office:</p>
+                    <p>Suleja Regional Educational Hub, Niger State, Nigeria.</p>
+                </div>
+            </div>
+
+            <div class="col-span-1 md:col-span-2 space-y-3">
+                <h6 class="text-xs font-bold uppercase tracking-wider text-white">Platform</h6>
+                <ul class="text-xs space-y-2">
+                    <li><a href="index.html" class="hover:text-indigo-400 transition-colors">Home Base</a></li>
+                    <li><a href="pricing.html" class="hover:text-indigo-400 transition-colors">Pricing Options</a></li>
+                    <li><a href="features.html" class="hover:text-indigo-400 transition-colors">System Features</a></li>
+                </ul>
+            </div>
+
+            <div class="col-span-1 md:col-span-2 space-y-3">
+                <h6 class="text-xs font-bold uppercase tracking-wider text-white">Corporate</h6>
+                <ul class="text-xs space-y-2">
+                    <li><a href="contact.html" class="hover:text-indigo-400 transition-colors">Contact Support</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Security Metrics</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Developer Logs</a></li>
+                </ul>
+            </div>
+
+            <div class="col-span-2 md:col-span-4 space-y-3">
+                <h6 class="text-xs font-bold uppercase tracking-wider text-white">Security & Policies</h6>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    All core student records and assets are processed strictly under compliance regulations and served via Cloudflare encrypted nodes.
+                </p>
+                <div class="flex space-x-4 text-[11px] pt-1">
+                    <a href="#" class="hover:text-indigo-400 transition-colors">Privacy Plan</a>
+                    <a href="#" class="hover:text-indigo-400 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 space-y-4 sm:space-y-0">
+            <p>&copy; 2026 Sekrenton Platforms Ltd. All rights reserved.</p>
+            <p class="font-medium tracking-wide">Infrastructure Orchestrated by LeahparAce</p>
+        </div>
+    </footer>
+
+    <script>
+      function setBillingCycle(cycle) {
+        const btnMonthly = document.getElementById("toggle-monthly");
+        const btnAnnual = document.getElementById("toggle-annual");
+        const priceSelectors = document.querySelectorAll(".price-val");
+
+        if (cycle === "annual") {
+          btnAnnual.classList.add("bg-white", "shadow-sm", "text-neutral-900");
+          btnAnnual.classList.remove("text-slate-600");
+          btnMonthly.classList.remove("bg-white", "shadow-sm", "text-neutral-900");
+          btnMonthly.classList.add("text-slate-600");
+
+          priceSelectors.forEach((p) => {
+            p.textContent = p.getAttribute("data-annual");
+          });
+        } else {
+          btnMonthly.classList.add("bg-white", "shadow-sm", "text-neutral-900");
+          btnMonthly.classList.remove("text-slate-600");
+          btnAnnual.classList.remove("bg-white", "shadow-sm", "text-neutral-900");
+          btnAnnual.classList.add("text-slate-600");
+
+          priceSelectors.forEach((p) => {
+            p.textContent = p.getAttribute("data-monthly");
+          });
+        }
+      }
+    </script>
+  </body>
+</html>
