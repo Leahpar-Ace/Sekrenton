@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features Matrix — Sekrenton Multi-Tenant Engine</title>
+    <!-- Compiled CSS Hook -->
+    <link rel="stylesheet" href="../dist/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sekrenton: {
+                            deepNavy: '#171638',
+                            bgDark: '#111033',
+                            violetAccent: '#4F46E5',
+                        }
+                    },
+                    borderRadius: {
+                        'card': '12px',
+                        'btn': '6px',
+                    }
+                }
+            }
+        }
+    </script>
+  </head>
+  <body class="flex flex-col h-full bg-[#F8FAFC] font-sans antialiased text-[#111827]">
+    
+    <!-- GLOBAL HEADER NAV -->
+    <header class="bg-[#F4F7FA] border-b border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <img src="../assets/Sekrenton Logo.png" alt="Sekrenton Logo" class="h-8 w-auto object-contain mix-blend-multiply">
+                <span class="text-xl font-bold tracking-tight text-sekrenton-deepNavy transition-colors group-hover:text-indigo-600">Sekrenton</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Home</a>
+                <a href="pricing.html" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Pricing</a>
+                <a href="features.html" class="text-sm font-semibold text-indigo-600 transition-colors underline underline-offset-8">Features</a>
+                <a href="contact.html" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Contact</a>
+            </nav>
+            <div class="flex items-center">
+                <a href="contact.html" class="bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-md hover:bg-indigo-500 transition-all shadow-md shadow-indigo-100">
+                    Request Demo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT WRAPPER -->
+    <main class="flex-grow">
+      <section class="max-w-7xl mx-auto px-6 py-16">
+        
+        <!-- Header Section -->
+        <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
+          <span class="text-xs font-bold uppercase tracking-widest text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full">System Capabilities</span>
+          <h2 class="text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
+            Engineered for Modern Institutions
+          </h2>
+          <p class="text-base text-[#6B7280] leading-relaxed">
+            Everything needed to deploy, customize, scale, and manage a sprawling multi-tenant digital hub configuration seamlessly with iron-clad database isolation.
+          </p>
+        </div>
+
+        <!-- Features Grid Structure (8 Uniform Cards) -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Card 1: Theme-Driven School Websites -->
+          <div class="bg-white p-6 rounded-card border border-slate-200/80 shadow-sm flex flex-col space-y-4 hover:shadow-md transition-all relative">
+            <span class="absolute top-4 right-4 bg-slate-100 text-slate-600 text-[10px] font-semibold px-2.5 py-0.5 rounded-full tracking-wide">Design</span>
+            <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-sm">
+              01
+            </div>
+            <h3 class="text-lg font-bold text-neutral-900">
+              Theme-Driven School Websites
+            </h3>
+            <p class="text-sm text-[#6B7280] leading-relaxed">
+              Instantly adjust brand identity elements, school color palettes, custom typography configurations, and media resources for individual school sites. Public front pages remain entirely responsive and visual-focused.
+            </p>
+          </div>
+
+          <!-- Card 2: Secure Portal Engine -->
+          <div class="bg-white p-6 rounded-card border border-slate-200/80 shadow-sm flex flex-col space-y-4 hover:shadow-md transition-all relative">
+            <span class="absolute top-4 right-4 bg-slate-100 text-slate-600 text-[10px] font-semibold px-2.5 py-0.5 rounded-full tracking-wide">Security</span>
+            <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-sm">
+              02
+            </div>
+            <h3 class="text-lg font-bold text-neutral-900">
+              Secure Portal Engine
+            </h3>
+            <p class="text-sm text-[#6B7280] leading-relaxed">
+              Dynamically isolate school data profiles at the multi-tenant database middleware layer. Protect student registration lists, parent accounts, and administrative personnel files with strict access rule rules.
+            </p>
+          </div>
+
+          <!-- Card 3: Invoicing & Fees Payment -->
+          <div class="bg-white p-6 rounded-card border border-slate-200/80 shadow-sm flex flex-col space-y-4 hover:shadow-md transition-all relative">
+            <span class="absolute top-4 right-4 bg-slate-100 text-slate-600 text-[10px] font-semibold px-2.5 py-0.5 rounded-full tracking-wide">Finance</span>
+            <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-sm">
+              03
+            </div>
+            <h3 class="text-lg font-bold text-neutral-900">
+              Invoicing & Fees Payment
+            </h3>
+            <p class="text-sm text-[#6B7280] leading-relaxed">
+              Generate dynamic term-based invoices automatically for entire classrooms or individual students. Features structural payment gateways for tuition tracking, localized splits, real-time receipts, and instantaneous balance reconciliation.
+            </p>
+          </div>
+
+          <!-- Card 4: School Admin Announcements -->
+          <div class="bg-white p-6 rounded-card border border-slate-200/80 shadow-sm flex flex-col space-y-4 hover:shadow-md transition-all relative">
+            <span class="absolute top-4 right-4 bg-slate-100 text-slate-600 text-[10px] font-semibold px-2.5 py-0.5 rounded-full tracking-wide">Network</span>
+            <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-sm">
+              04
+            </div>
+            <h3 class="text-lg font-bold text-neutral-900">
+              Admin Announcement Broadcaster
+            </h3>
+            <p class="text-sm text-[#6B7280] leading-relaxed">
+              Empower school operators to push vital updates, policy alerts, and holiday calendars across the entire tenant workspace instantly. Cross-broadcasts synchronously to student portals, parent feeds, and email notification vectors.
+            </p>
+          </div>
+
+          <!-- Card 5: Grade Book Modules -->
+          <div class="bg-white p-6 rounded-card border border-slate-200/80 shadow-sm flex flex-col space-y-4 hover:shadow-md transition-all relative">
+            <span class="absolute top-4 right-4 bg-slate-100 text-slate-600 text-[10px] font-semibold px-2.5 py-0.5 rounded-full tracking-wide">Records</span>
+            <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-sm">
+              05
+            </div>
+            <h3 class="text-lg font-bold text-neutral-900">
+              Grade Book Modules
+            </h3>
+            <p class="text-sm text-[#6B7280] leading-relaxed">
+              Fast, intuitive grade book lists for quick results processing. Features automated weight distribution, terminal card formatting, performance analysis reporting, and single-click parent update broadcasts.
+            </p>
+          </div>
+
+          <!-- Card 6: Universal Custom Domains -->
+          <div class="bg-white p-6 rounded-card border border-slate-200/80 shadow-sm flex flex-col space-y-4 hover:shadow-md transition-all relative">
+            <span class="absolute top-4 right-4 bg-slate-100 text-slate-600 text-[10px] font-semibold px-2.5 py-0.5 rounded-full tracking-wide">Routing</span>
+            <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-sm">
+              06
+            </div>
+            <h3 class="text-lg font-bold text-neutral-900">
+              Universal Custom Domains
+            </h3>
+            <p class="text-sm text-[#6B7280] leading-relaxed">
+              Map and route custom school links natively (e.g., <code class="bg-slate-100 text-indigo-600 px-1 rounded font-mono text-xs">academy.sch.ng</code>). Features immediate, automated secure routing handling across our edge architecture.
+            </p>
+          </div>
+
+          <!-- Card 7: Central Management Dashboard -->
+          <div class="bg-white p-6 rounded-card border border-slate-200/80 shadow-sm flex flex-col space-y-4 hover:shadow-md transition-all relative">
+            <span class="absolute top-4 right-4 bg-slate-100 text-slate-600 text-[10px] font-semibold px-2.5 py-0.5 rounded-full tracking-wide">Data</span>
+            <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-sm">
+              07
+            </div>
+            <h3 class="text-lg font-bold text-neutral-900">
+              Central Management Dashboard
+            </h3>
+            <p class="text-sm text-[#6B7280] leading-relaxed">
+              High-level administrative oversight screens tracking system performance logs, active cross-tenant student registries, financial accounting summaries, and live resource allocation data pools.
+            </p>
+          </div>
+
+          <!-- Card 8: Automated Split Settlement -->
+          <div class="bg-white p-6 rounded-card border border-slate-200/80 shadow-sm flex flex-col space-y-4 hover:shadow-md transition-all relative">
+            <span class="absolute top-4 right-4 bg-slate-100 text-slate-600 text-[10px] font-semibold px-2.5 py-0.5 rounded-full tracking-wide">Automation</span>
+            <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-sm">
+              08
+            </div>
+            <h3 class="text-lg font-bold text-neutral-900">
+              Automated Split Fee Settlements
+            </h3>
+            <p class="text-sm text-[#6B7280] leading-relaxed">
+              System architecture designed to handle tenant fees automatically. When tuition is cleared by a parent, funds route directly to the designated institution while isolating standard engine utility fees cleanly.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- PREMIUM TESTIMONIALS / REVIEWS GRID SECTION -->
+      <section class="bg-slate-100/60 border-t border-b border-slate-200/60 py-20">
+          <div class="max-w-6xl mx-auto px-6">
+              <div class="text-center max-w-2xl mx-auto space-y-2 mb-14">
+                  <h2 class="text-3xl font-bold tracking-tight text-slate-900">Trusted by Forward-Thinking Schools</h2>
+                  <p class="text-sm text-slate-500">Read how administrators and principals leverage Sekrenton to optimize their digital presence.</p>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-8">
+                  <!-- Review 1 -->
+                  <div class="bg-white p-8 rounded-card border border-slate-200/60 shadow-sm flex flex-col justify-between space-y-6">
+                      <p class="text-slate-600 italic text-sm leading-relaxed">
+                          "Migrating our portal ecosystem to Sekrenton completely streamlined our administrative reporting workflows. The custom domain mapping works flawlessly, and the built-in layout themes instantly upgraded our public facing image."
+                      </p>
+                      <div class="flex items-center space-x-3 pt-2">
+                          <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center text-white font-bold text-xs shadow-inner">
+                              TA
+                          </div>
+                          <div>
+                              <h5 class="text-xs font-bold text-slate-900">Tunde Akogun</h5>
+                              <p class="text-[10px] text-slate-400 font-medium">Director of Strategic Infrastructure</p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Review 2 -->
+                  <div class="bg-white p-8 rounded-card border border-slate-200/60 shadow-sm flex flex-col justify-between space-y-6">
+                      <p class="text-slate-600 italic text-sm leading-relaxed">
+                          "The platform speed provided by the underlying global mesh infrastructure is incredible. Parents receive fast terminal grade calculations instantly with absolute database accuracy, and onboarding students took less than an hour."
+                      </p>
+                      <div class="flex items-center space-x-3 pt-2">
+                          <div class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-white font-bold text-xs shadow-inner">
+                              GB
+                          </div>
+                          <div>
+                              <h5 class="text-xs font-bold text-slate-900">Godwin Bobola</h5>
+                              <p class="text-[10px] text-slate-400 font-medium">Head of Institutional Technology</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+    </main>
+
+    <!-- DETAILED DYNAMIC PROJECT FOOTER -->
+    <footer class="bg-sekrenton-bgDark text-slate-400 border-t border-white/5 pt-16 pb-8 font-sans">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-12 gap-8 pb-12 border-b border-white/10">
+            
+            <!-- Brand & Info Column -->
+            <div class="col-span-2 md:col-span-4 space-y-4">
+                <div class="flex items-center space-x-2">
+                    <span class="text-lg font-bold tracking-tight text-white">Sekrenton Platforms</span>
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+                    Providing top-tier multi-tenant SaaS digital infrastructure, specialized school website architecture, and dynamic portals optimized for the educational industry.
+                </p>
+                <div class="text-[11px] space-y-1 text-slate-500">
+                    <p class="font-semibold text-slate-400">Headquarters Office:</p>
+                    <p>Suleja Regional Educational Hub, Niger State, Nigeria.</p>
+                </div>
+            </div>
+
+            <!-- Solutions Navigation Column -->
+            <div class="col-span-1 md:col-span-2 space-y-3">
+                <h6 class="text-xs font-bold uppercase tracking-wider text-white">Platform</h6>
+                <ul class="text-xs space-y-2">
+                    <li><a href="index.html" class="hover:text-indigo-400 transition-colors">Home Base</a></li>
+                    <li><a href="pricing.html" class="hover:text-indigo-400 transition-colors">Pricing Options</a></li>
+                    <li><a href="features.html" class="hover:text-indigo-400 transition-colors">System Features</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Navigation Column -->
+            <div class="col-span-1 md:col-span-2 space-y-3">
+                <h6 class="text-xs font-bold uppercase tracking-wider text-white">Corporate</h6>
+                <ul class="text-xs space-y-2">
+                    <li><a href="contact.html" class="hover:text-indigo-400 transition-colors">Contact Support</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Security Metrics</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Developer Logs</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal Documents Column -->
+            <div class="col-span-2 md:col-span-4 space-y-3">
+                <h6 class="text-xs font-bold uppercase tracking-wider text-white">Security & Policies</h6>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    All core student records and assets are processed strictly under compliance regulations and served via Cloudflare encrypted nodes.
+                </p>
+                <div class="flex space-x-4 text-[11px] pt-1">
+                    <a href="#" class="hover:text-indigo-400 transition-colors">Privacy Plan</a>
+                    <a href="#" class="hover:text-indigo-400 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Trademark Sub-Footer -->
+        <div class="max-w-7xl mx-auto px-6 pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 space-y-4 sm:space-y-0">
+            <p>&copy; 2026 Sekrenton Platforms Ltd. All rights reserved.</p>
+            <p class="font-medium tracking-wide">Infrastructure Orchestrated by LeahparAce</p>
+        </div>
+    </footer>
+
+  </body>
+</html>

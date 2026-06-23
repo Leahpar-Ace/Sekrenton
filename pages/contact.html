@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect with Operations — Sekrenton Multi-Tenant Engine</title>
+    <!-- Compiled CSS Hook -->
+    <link rel="stylesheet" href="../dist/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sekrenton: {
+                            deepNavy: '#171638',
+                            bgDark: '#111033',
+                            violetAccent: '#4F46E5',
+                        }
+                    },
+                    borderRadius: {
+                        'card': '12px',
+                        'btn': '6px',
+                    }
+                }
+            }
+        }
+    </script>
+  </head>
+  <body class="flex flex-col h-full bg-[#F8FAFC] font-sans antialiased text-[#111827]">
+    
+    <!-- GLOBAL HEADER NAV -->
+    <header class="bg-[#F4F7FA] border-b border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <img src="../assets/Sekrenton Logo.png" alt="Sekrenton Logo" class="h-8 w-auto object-contain mix-blend-multiply">
+                <span class="text-xl font-bold tracking-tight text-sekrenton-deepNavy transition-colors group-hover:text-indigo-600">Sekrenton</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Home</a>
+                <a href="pricing.html" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Pricing</a>
+                <a href="features.html" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Features</a>
+                <a href="contact.html" class="text-sm font-semibold text-indigo-600 transition-colors underline underline-offset-8">Contact</a>
+            </nav>
+            <div class="flex items-center">
+                <a href="contact.html" class="bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-md hover:bg-indigo-500 transition-all shadow-md shadow-indigo-100">
+                    Request Demo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT WRAPPER -->
+    <main class="flex-grow">
+      <section class="max-w-7xl mx-auto px-6 py-16 lg:py-24">
+        <div class="grid lg:grid-cols-12 gap-12 items-start">
+            
+            <!-- Left Column: Contact Information & Context -->
+            <div class="lg:col-span-5 space-y-8">
+                <div class="space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-widest text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full">Onboarding & Support</span>
+                    <h1 class="text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
+                        Let's Initialize Your Network
+                    </h1>
+                    <p class="text-base text-[#6B7280] leading-relaxed">
+                        Whether you are migrating a standalone primary school or deploying a multi-campus institutional infrastructure ecosystem, our implementation desk is optimized to assist.
+                    </p>
+                </div>
+
+                <hr class="border-slate-200" />
+
+                <!-- Detail Points Block -->
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-sm shrink-0">
+                            🏢
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-neutral-900 uppercase tracking-wider">Regional Headquarters Base</h4>
+                            <p class="text-sm text-slate-600 mt-1">Suleja Regional Educational Hub,</p>
+                            <p class="text-sm text-slate-600">Niger State, Nigeria.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-sm shrink-0">
+                            ✉️
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-neutral-900 uppercase tracking-wider">Operations & Inquiries</h4>
+                            <p class="text-sm text-slate-600 mt-1 font-medium hover:text-indigo-600 transition-colors">
+                                <a href="mailto:ops@sekrenton.com">ops@sekrenton.com</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-sm shrink-0">
+                            🛡️
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-neutral-900 uppercase tracking-wider">90-Day Trial Protection</h4>
+                            <p class="text-sm text-slate-600 mt-1 leading-relaxed">
+                                All tier queries directly qualify for our extensive 3-Month risk-free system implementation sandbox, matching database isolation modules completely out of the box.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Interactive Form Component -->
+            <div class="lg:col-span-7 bg-white p-8 rounded-card border border-slate-200/80 shadow-sm">
+                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Transmission acknowledged. System implementation architect will follow up shortly.');" class="space-y-6">
+                    
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <!-- Institution Name Input -->
+                        <div class="space-y-2">
+                            <label for="institution-name" class="text-xs font-bold text-neutral-800 uppercase tracking-wide">Institution Name</label>
+                            <input 
+                                type="text" 
+                                id="institution-name" 
+                                required 
+                                placeholder="e.g., Premier Academy" 
+                                class="w-full text-sm px-4 py-3 bg-slate-50 border border-slate-200 rounded-btn text-neutral-900 focus:outline-none focus:border-indigo-500 focus:bg-white transition-all"
+                            />
+                        </div>
+
+                        <!-- Contact Person Input -->
+                        <div class="space-y-2">
+                            <label for="contact-name" class="text-xs font-bold text-neutral-800 uppercase tracking-wide">Administrator Name</label>
+                            <input 
+                                type="text" 
+                                id="contact-name" 
+                                required 
+                                placeholder="e.g., Tunde Akogun" 
+                                class="w-full text-sm px-4 py-3 bg-slate-50 border border-slate-200 rounded-btn text-neutral-900 focus:outline-none focus:border-indigo-500 focus:bg-white transition-all"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <!-- Official Email Input -->
+                        <div class="space-y-2">
+                            <label for="email-address" class="text-xs font-bold text-neutral-800 uppercase tracking-wide">Official Email Address</label>
+                            <input 
+                                type="email" 
+                                id="email-address" 
+                                required 
+                                placeholder="admin@school.sch.ng" 
+                                class="w-full text-sm px-4 py-3 bg-slate-50 border border-slate-200 rounded-btn text-neutral-900 focus:outline-none focus:border-indigo-500 focus:bg-white transition-all"
+                            />
+                        </div>
+
+                        <!-- Infrastructure Package Dropdown Selector -->
+                        <div class="space-y-2">
+                            <label for="package-tier" class="text-xs font-bold text-neutral-800 uppercase tracking-wide">Target Subscription Framework</label>
+                            <select 
+                                id="package-tier" 
+                                class="w-full text-sm px-4 py-3 bg-slate-50 border border-slate-200 rounded-btn text-neutral-900 focus:outline-none focus:border-indigo-500 focus:bg-white transition-all appearance-none"
+                                style="background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%236B7280%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; background-position: right 1rem center; background-size: 0.65rem auto;"
+                            >
+                                <option value="starter">Primary Crest Starter — ₦25,000/mo</option>
+                                <option value="pro" selected>Academy Premier Hub — ₦50,000/mo</option>
+                                <option value="max">Institutional Prestige Max — ₦75,000/mo</option>
+                                <option value="enterprise">Enterprise Elite Network — Custom Tier</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Custom Implementation Detail Box -->
+                    <div class="space-y-2">
+                        <label for="deployment-notes" class="text-xs font-bold text-neutral-800 uppercase tracking-wide">Deployment Specifications & Requirements</label>
+                        <textarea 
+                            id="deployment-notes" 
+                            rows="4" 
+                            placeholder="Detail any existing data structures to migrate, domain targets, or special multi-tenant access specifications here..."
+                            class="w-full text-sm px-4 py-3 bg-slate-50 border border-slate-200 rounded-btn text-neutral-900 focus:outline-none focus:border-indigo-500 focus:bg-white transition-all resize-none"
+                        ></textarea>
+                    </div>
+
+                    <!-- Action Button -->
+                    <button 
+                        type="submit" 
+                        class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3.5 text-sm rounded-btn transition-all shadow-md shadow-indigo-100"
+                    >
+                        Initialize Sandbox Implementation
+                    </button>
+                </form>
+            </div>
+
+        </div>
+      </section>
+
+      <!-- BRAND SUPPORT INDICATION PANEL -->
+      <section class="bg-slate-100/60 border-t border-b border-slate-200/60 py-12 text-center">
+          <div class="max-w-4xl mx-auto px-6">
+              <p class="text-xs font-bold uppercase tracking-widest text-slate-400">Enterprise Standards Guaranteed</p>
+              <div class="flex flex-wrap items-center justify-center gap-8 mt-6 opacity-60 grayscale">
+                  <span class="text-sm font-black tracking-tight text-slate-900">🔒 AES-256 ISOLATION</span>
+                  <span class="text-sm font-black tracking-tight text-slate-900">⚡ CLOUDFLARE EDGE</span>
+                  <span class="text-sm font-black tracking-tight text-slate-900">📦 POSTGRESQL MULTI-TENANCY</span>
+              </div>
+          </div>
+      </section>
+    </main>
+
+    <!-- DETAILED DYNAMIC PROJECT FOOTER -->
+    <footer class="bg-sekrenton-bgDark text-slate-400 border-t border-white/5 pt-16 pb-8 font-sans">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-12 gap-8 pb-12 border-b border-white/10">
+            
+            <!-- Brand & Info Column -->
+            <div class="col-span-2 md:col-span-4 space-y-4">
+                <div class="flex items-center space-x-2">
+                    <span class="text-lg font-bold tracking-tight text-white">Sekrenton Platforms</span>
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+                    Providing top-tier multi-tenant SaaS digital infrastructure, specialized school website architecture, and dynamic portals optimized for the educational industry.
+                </p>
+                <div class="text-[11px] space-y-1 text-slate-500">
+                    <p class="font-semibold text-slate-400">Headquarters Office:</p>
+                    <p>Suleja Regional Educational Hub, Niger State, Nigeria.</p>
+                </div>
+            </div>
+
+            <!-- Solutions Navigation Column -->
+            <div class="col-span-1 md:col-span-2 space-y-3">
+                <h6 class="text-xs font-bold uppercase tracking-wider text-white">Platform</h6>
+                <ul class="text-xs space-y-2">
+                    <li><a href="index.html" class="hover:text-indigo-400 transition-colors">Home Base</a></li>
+                    <li><a href="pricing.html" class="hover:text-indigo-400 transition-colors">Pricing Options</a></li>
+                    <li><a href="features.html" class="hover:text-indigo-400 transition-colors">System Features</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Navigation Column -->
+            <div class="col-span-1 md:col-span-2 space-y-3">
+                <h6 class="text-xs font-bold uppercase tracking-wider text-white">Corporate</h6>
+                <ul class="text-xs space-y-2">
+                    <li><a href="contact.html" class="hover:text-indigo-400 transition-colors">Contact Support</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Security Metrics</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Developer Logs</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal Documents Column -->
+            <div class="col-span-2 md:col-span-4 space-y-3">
+                <h6 class="text-xs font-bold uppercase tracking-wider text-white">Security & Policies</h6>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    All core student records and assets are processed strictly under compliance regulations and served via Cloudflare encrypted nodes.
+                </p>
+                <div class="flex space-x-4 text-[11px] pt-1">
+                    <a href="#" class="hover:text-indigo-400 transition-colors">Privacy Plan</a>
+                    <a href="#" class="hover:text-indigo-400 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Trademark Sub-Footer -->
+        <div class="max-w-7xl mx-auto px-6 pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 space-y-4 sm:space-y-0">
+            <p>&copy; 2026 Sekrenton Platforms Ltd. All rights reserved.</p>
+            <p class="font-medium tracking-wide">Infrastructure Orchestrated by LeahparAce</p>
+        </div>
+    </footer>
+
+  </body>
+</html>
